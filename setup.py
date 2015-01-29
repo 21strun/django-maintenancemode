@@ -43,7 +43,6 @@ setup(
     package_data={
         'maintenancemode': [
             'tests/templates/503.html',
-            'fixtures/initial_data.json',
         ],
     },
     classifiers=[
