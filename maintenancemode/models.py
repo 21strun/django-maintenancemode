@@ -21,7 +21,7 @@ class MaintenanceMode(models.Model):
         verbose_name=u"Enable maintenance mode?", default=False)
     allow_superuser = models.BooleanField(
         verbose_name=u"Allow superuser to enter site?", default=True)
-    ignored_urls = models.ManyToManyField(IgnoredUrls, blank=True, null=True)
+    ignored_urls = models.ManyToManyField(IgnoredUrls, blank=True)
 
     class Meta:
         verbose_name = u"maintenance mode"

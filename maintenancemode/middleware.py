@@ -61,5 +61,5 @@ class MaintenanceModeMiddleware(object):
         # Otherwise show the user the 503 page
         resolver = urlresolvers.get_resolver(None)
 
-        callback, param_dict = resolver._resolve_special('503')
+        callback, param_dict = resolver.resolve_error_handler('503')
         return callback(request, **param_dict)
